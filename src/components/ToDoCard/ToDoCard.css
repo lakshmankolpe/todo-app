@@ -71,7 +71,7 @@
     .category {
         font-size: 14px;
         padding: 4px 6px;
-        width: 70px;
+        width: 80px;
     }
 }
 
@@ -83,7 +83,7 @@
     .category {
         font-size: 13px;
         padding: 3px 5px;
-        width: 60px;
+        width: 70px;
     }
 }
 
@@ -97,7 +97,7 @@
     .category {
         font-size: 12px;
         padding: 2px 4px;
-        width: 50px;
+        width: 70px;
         top: 5px;
         right: 5px;
     }

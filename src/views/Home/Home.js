@@ -44,7 +44,7 @@ function Home() {
     }
     return (
         <div className='todo-app-main-container'>
-            <h1 className='app-title'>ToDo App 📝</h1>
+            <h1 className='app-title'>📃 ToDo App 📝</h1>
             <div className='todo-list-container'>
                 {todolist.map((todoItem, i) => {
                     const { task, category } = todoItem;
