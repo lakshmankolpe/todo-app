@@ -1,46 +1,116 @@
+.todo-app-main-container {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+    border: 3px double #638fe0b5;
+}
 
-
-.app-title{
-text-align: center;
+.app-title {
+    text-align: center;
 
 }
 
-.todo-list-container{
-background-color: #fff;
-height: 60vh;
-width: 26%;
-margin: 5px auto;
-border-radius: 5px;
-padding: 5px;
-overflow-y: scroll;
+.todo-list-container {
+    background-color: #fff;
+    height: 60vh;
+    width: 100%;
+    margin: 5px auto;
+    border-radius: 5px;
+    padding: 5px;
+    overflow-y: scroll;
 }
-.add-todo-item-container{
+
+.add-todo-item-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin: 10px 0px ;
+    margin: 10px 0px;
+    height: 60px;
+    width: 100%;
 }
-.add-input{
-padding: 5px 27px;
-border-radius: 10px;
-font-size: 20px;
 
-}
-.add-icon{
-height: 45px;
-border-radius: 5px;
-margin-left: 10px;
-cursor: pointer;
-border-radius: 50%;
-
-}
-.add-icon:hover{
-    transform: rotate(90deg);
-    transition: 1s;
-}
-.category-select{
-    padding: 5px 10px;
+.add-input {
+    padding: 5px 27px;
     border-radius: 10px;
     font-size: 20px;
     border: 1px solid black;
+
+}
+
+.add-icon {
+    height: 45px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+.add-icon:hover {
+    transform: rotate(90deg);
+    transition: 1s;
+}
+
+.category-select {
+    text-align: center;
+    padding: 7px;
+    width: 80px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 1px solid black;
+
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .todo-app-main-container {
+        width: 50%;
+    }
+    .add-input {
+        font-size: 18px;
+        padding: 5px 20px;
+    }
+    .category-select {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .todo-app-main-container {
+        width: 70%;
+    }
+    .add-input {
+        font-size: 16px;
+        padding: 5px 15px;
+    }
+    .category-select {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .todo-app-main-container {
+        width: 90%;
+        padding: 5px;
+    }
+    .add-todo-item-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .add-input {
+        font-size: 14px;
+        padding: 5px 10px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .add-icon {
+        height: 40px;
+        margin-left: 0;
+    }
+    .category-select {
+        font-size: 12px;
+        width: 100%;
+    }
 }

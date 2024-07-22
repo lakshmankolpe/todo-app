@@ -1,54 +1,111 @@
-.todo-card{
+.todo-card {
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+    color:white;
     border: 1px solid black;
     padding: 10px 20px;
     margin: 10px 5px;
     border-radius: 5px;
     font-size: 20px;
     position: relative;
-    background-color: aqua;
     display: flex;
     align-items: center;
+
+
 }
 
-.category{
-position: absolute;
-top: 5px;
-right: 30px;
-background-color: aliceblue;
-font-size: 12px;
-padding: 1px 5px;
-width: 70px;
-text-align: center;
- border-radius: 20px;
+.category {
+    position: absolute;
+    right: 10px;
+    background-color: aliceblue;
+    font-size: 15px;
+    padding: 5px 8px;
+    width: 80px;
+    text-align: center;
+    border-radius: 20px;
 }
 
-.delet-icon{
+.delet-icon {
     height: 20px;
     margin-right: 10px;
     cursor: pointer;
 }
-@keyframes delet-animation{
-    0%{
+
+@keyframes delet-animation {
+    0% {
         transform: rotate(-25deg);
     }
-    25%{
+
+    25% {
         transform: rotate(0deg);
     }
-    50%{
+
+    50% {
         transform: rotate(25deg);
     }
-    75%{
+
+    75% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(-25deg);
     }
 }
-.delet-icon:hover{
+
+.delet-icon:hover {
     height: 21px;
     animation: delet-animation;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
 
 
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .todo-card {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+    .category {
+        font-size: 14px;
+        padding: 4px 6px;
+        width: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .todo-card {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+    .category {
+        font-size: 13px;
+        padding: 3px 5px;
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .todo-card {
+        font-size: 14px;
+        padding: 4px 8px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .category {
+        font-size: 12px;
+        padding: 2px 4px;
+        width: 50px;
+        top: 5px;
+        right: 5px;
+    }
+    .delet-icon {
+        height: 18px;
+        margin-right: 5px;
+    }
+    .delet-icon:hover {
+        height: 19px;
+    }
 }

@@ -17,8 +17,8 @@ const CATEGORY_COLORS ={
   work:"red",
   personal:"orange",
   health:"pink",
-  shopping:"yellow",
-  other:"sky"
+  shopping:"#ff6600",
+  other:"#ff3399"
 }
   return (
     <div className='todo-card'>

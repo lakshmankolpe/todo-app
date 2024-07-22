@@ -43,7 +43,7 @@ function Home() {
 
     }
     return (
-        <div>
+        <div className='todo-app-main-container'>
             <h1 className='app-title'>ToDo App 📝</h1>
             <div className='todo-list-container'>
                 {todolist.map((todoItem, i) => {
@@ -81,7 +81,7 @@ function Home() {
                     <option value="personal">Personal</option>
                     <option value="health">Health</option>
                     <option value="shopping">Shopping</option>
-                    <option value="other">Other</option>
+                    <option value="other">other</option>
                 </select>
 
                 <img
